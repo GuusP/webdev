@@ -34,7 +34,8 @@ body {
 }
 
 a:link,
-a:visited {
+a:visited,
+a:focus {
     color: #FFF2E7;
 }
 
@@ -78,22 +79,10 @@ a:visited {
     font-size: 20px;
     font-weight: 400;
     font-family: 'Sarala', sans-serif;
-    transition-property: transform;
-    transition-duration: .5s;
 }
-
 
 .conteudo-principal-escrito button:hover {
-    transform: scale(1.1, 1.1);
-}
-
-@keyframes buttonBG {
-    from {}
-
-    to {
-
-        transform: scale(1.1, 1.1);
-    }
+    background-color: rgba(236, 214, 196, 0.53);
 }
 
 .conteudo-secundario {
@@ -115,40 +104,10 @@ a:visited {
 footer {
     border-top: 0.4px solid #FFF2E7;
     padding: 32px;
-    text-align: center;
 }
 
 footer img {
     height: 48px;
     display: block;
     margin: auto;
-}
-
-footer p {
-    margin-top: 20px;
-    font-size: 90%;
-}
-
-a:hover {
-    animation-name: clicavel;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-}
-
-footer a:link,
-footer a:visited {
-    color: aqua;
-}
-
-
-
-
-@keyframes clicavel {
-    from {
-        color: #FFF2E7;
-    }
-
-    to {
-        color: #FEAFBE;
-    }
 }
