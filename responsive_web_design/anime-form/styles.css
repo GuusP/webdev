@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Hind+Madurai:wght@300;400;500&family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+:root {
+    --lighter-blue: #E8F9FD;
+    --light-blue: #79DAE8;
+    --medium-blue: rgba(10, 161, 221, .6);
+    --dark-blue: rgb(33, 85, 205);
+
+    font-size: 14px;
+}
+
+
+
+body {
+    background-image: url("https://i.pinimg.com/originals/bf/61/84/bf61847ef276a7e147731e894d844602.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-cover {
+    background-color: #0AA1DD;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: -5;
+    opacity: .2;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+p {
+    font-family: 'Hind Madurai', sans-serif;
+    padding: .3rem 0 .3rem 0;
+    font-size: 1.4rem;
+}
+
+/* End of General Styles */
+
+/* Header */
+
+header {
+    max-width: 100%;
+    text-align: center;
+    margin: 2rem 1rem 2rem 1rem;
+    z-index: 2;
+}
+
+
+/* End of Header */
+
+/* Survey Form - Main */
+
+main {
+    max-width: 90%;
+    background-color: var(--medium-blue);
+    border-radius: 1px;
+    margin: 0 auto 4rem auto;
+}
+
+
+form {
+    padding: 1.3rem 0;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+label,
+form p {
+    display: inline-block;
+    margin: .5rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"] {
+    border-radius: .3rem;
+    border: none;
+    text-decoration: none;
+    height: 2rem;
+    width: 100%;
+    padding: 0 .4rem;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    font-weight: 400;
+}
+
+input[type="number"] {
+    border-radius: .3rem;
+    border: none;
+    text-decoration: none;
+    height: 2rem;
+    width: 30%;
+    padding: 0 .4rem;
+    font-size: 90%;
+}
+
+
+input {
+    font-family: 'DM Sans';
+}
+
+textarea {
+    font-family: 'DM Sans';
+    padding: .4rem .4rem;
+    max-width: 100%;
+    min-width: 50%;
+    border: none;
+}
+
+button {
+    width: 100%;
+    height: 2.5rem;
+    background-color: aquamarine;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 1rem;
+}
+
+select {
+    height: 2rem;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    padding: 0 .4rem;
+    border-radius: .3rem;
+}
+
+
+
+/* End of Survey Form - Main */
+
+@media only screen and (min-width: 768px) {
+
+    input[type="text"],
+    input[type="email"] {
+        width: 50%;
+    }
+
+    input[type="number"] {
+        width: 15%;
+
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    main {
+        width: 80%;
+    }
+
+
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    label,
+    form p {
+        font-size: 1.6rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    textarea {
+        font-size: 1.2rem;
+    }
+
+    button {
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    main {
+        width: 70%;
+    }
+
+
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+    }
+
+    label,
+    form p {
+        font-size: 2rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    textarea {
+        font-size: 1.5rem;
+    }
+
+    button {
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+}

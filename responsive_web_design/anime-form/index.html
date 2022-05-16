@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+    <div class="bg-cover"></div>
+
+    <header>
+        <h1 id="title">Anime Survey</h1>
+        <p id="description">Hey, thank you for helping with this anime survey!</p>
+    </header>
+
+    <main class="container">
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name:</label><br>
+            <input type="text" name="name" id="name" required placeholder="Your name"><br>
+            <label for="email" id="email-label">Email:</label><br>
+            <input type="email" name="email" id="email" required placeholder="Your Email"><br>
+            <label for="number" id="number-label">Age:</label><br>
+            <input type="number" name="age" id="number" min="1" max="60" required placeholder="Your Age">
+
+            <br><label for="dropdown">How many animes have you watched?</label><br>
+            <select name="dropdown" id="dropdown">
+                <option value="select" disabled selected>Select</option>
+                <option value="1 - 3">1 - 5</option>
+                <option value="4 - 7">4 - 7</option>
+                <option value="10+">10+</option>
+            </select><br>
+
+            <p>Select which of this animes have you heard about the most:</p><br>
+            <input type="radio" name="most-heard" id="hunter" value="hunter">
+            <label for="hunter">Hunter x Hunter</label><br>
+            <input type="radio" name="most-heard" id="jujutsu" value="jujutsu">
+            <label for="jujutsu">Jujutsu Kaizen</label><br>
+            <input type="radio" name="most-heard" id="kimetsu" value="kimetsu">
+            <label for="kimetsu">Kimetsu no Yaiba</label><br>
+
+            <p>Select which of this animes have you ever watched:</p><br>
+            <input type="checkbox" name="watched" id="naruto" value="naruto">
+            <label for="naruto">Naruto</label><br>
+            <input type="checkbox" name="watched" id="dbz" value="dbz">
+            <label for="dbz">Dragon Ball Z</label><br>
+            <input type="checkbox" name="watched" id="one-piece" value="one-piece">
+            <label for="one-piece">One Piece</label><br>
+
+            <label for="textarea">Write about your favorite anime:</label><br>
+            <textarea name="" id="textarea" cols="30" rows="8"></textarea><br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
