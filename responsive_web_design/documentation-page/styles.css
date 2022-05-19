@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Roboto:wght@300;400;500&family=Source+Code+Pro&display=swap');
+
+* {
+    text-decoration: none;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+:root {
+    --gray: rgb(54, 54, 54);
+    --code-bg: rgba(219, 219, 219, .6);
+}
+
+/* Header*/
+
+a,
+a:link {
+    color: black;
+}
+
+header {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.8rem;
+}
+
+
+
+nav ul {
+    margin-top: 1rem;
+    font-weight: 500;
+    background-color: var(--code-bg);
+}
+
+nav li {
+    list-style-type: none;
+    margin-top: .3rem;
+
+}
+
+nav {
+    padding: .5rem 1rem .5rem 1rem;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+i {
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+    font-size: 1.8rem;
+}
+
+#nav-links {
+    overflow: hidden;
+    transition: .8s;
+    height: 0;
+}
+
+/* End Header */
+
+#main-doc {
+    padding: 1rem;
+}
+
+code {
+    display: block;
+}
+
+#main-doc header {
+    margin: 2rem 0 .5rem;
+}
+
+#main-doc ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    padding-right: 1rem;
+    color: var(--gray);
+}
+
+p {
+    line-height: 24px;
+    margin-bottom: 24px;
+    color: var(--gray);
+}
+
+code {
+    display: block;
+    background-color: var(--code-bg);
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 30px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: .9rem;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+
+    #nav-links {
+        height: max-content;
+        background-color: white;
+        transition: 0s;
+        font-size: 1.5rem;
+        font-weight: 300;
+        height: max-content;
+    }
+
+    #nav-links li {
+        position: relative;
+    }
+
+    #nav-links li::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+
+        background-color: black;
+    }
+
+    nav {
+        margin-top: 2rem;
+
+    }
+
+    nav::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: black;
+
+    }
+
+
+    i {
+        display: none !important;
+    }
+}
