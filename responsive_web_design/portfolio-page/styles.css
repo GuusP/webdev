@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200&family=Raleway:wght@500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --dark-purple: #242038;
+    --purple: #725AC1;
+    --light-purple: #8D86C9;
+    --lavender-gray: #CAC4CE;
+    --linen: #F7ECE1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(242, 242, 242);
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(242, 242, 242);
+    text-decoration: none;
+}
+
+header {
+    padding-left: .8rem;
+    background-color: var(--purple);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#nav-icon {
+    font-size: 2rem;
+    text-align: left;
+}
+
+#navbar {
+    height: max-content;
+    overflow: hidden;
+}
+
+#welcome-section {
+    background-color: var(--dark-purple);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2rem;
+}
+
+#welcome-section p {
+    font-style: italic;
+    color: rgb(167, 195, 243);
+    font-size: 1.3rem;
+}
+
+#note-text {
+    font-size: .8rem !important;
+    text-align: center;
+}
+
+#projects {
+    padding-top: 2rem;
+    background-color: var(--lavender-gray);
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+}
+
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project-tile {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img {
+    max-width: 100%;
+}
+
+.project-title {
+    text-align: center;
+    color: rgb(242, 242, 242);
+    background-color: var(--purple);
+    padding-block: 1rem;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.project-title:hover {
+    font-size: 1.4rem;
+}
+
+#contact {
+    background-color: var(--dark-purple);
+    padding-block: 2rem;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#contact i {
+    font-size: 1.4rem;
+}
+
+#contact a {
+    margin-left: .3rem;
+}
+
+@media only screen and (min-width: 768px) {
+    #nav-icon {
+        display: none;
+    }
+
+    header {
+        height: 5%;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #navbar {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #nav-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #welcome-section p {
+        font-size: 1.8rem;
+    }
+
+    #note-text {
+        font-size: 1rem !important;
+    }
+
+    #projects h1 {
+        font-size: 2.3rem;
+    }
+
+    #projects-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .project-tile {
+        width: 40vw;
+        height: 40vw;
+
+    }
+
+    .project-img {
+        max-width: 100%;
+        height: 80%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .project-title {
+        display: flex;
+        text-align: center;
+        padding: auto;
+        font-size: 1.1rem;
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projects h1 {
+        font-size: 2.6rem;
+    }
+
+    #contact h1 {
+        font-size: 2.6rem;
+    }
+
+    #contact i {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .project-tile {
+        width: 30vw;
+        height: 30vw;
+    }
+}

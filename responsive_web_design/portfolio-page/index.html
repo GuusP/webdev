@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Page - Gustavo Paulino</title>
+    <script src="https://kit.fontawesome.com/969e070579.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <header>
+        <div id="nav-icon">
+            <i class="fa-solid fa-bars" onclick="navBar()"></i>
+        </div>
+
+        <nav id="navbar">
+            <ul id="nav-links">
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome-section">
+            <h1>Hey, I am Mimic</h1>
+            <p>a web developer</p>
+            <p id="note-text">IMPORTANT: This is just a fake portfolio. All the projects and contact details given are
+                not real. </p>
+        </section>
+
+        <section id="projects">
+            <h1>These are some of my projects</h1>
+            <div id="projects-container">
+                <div class="project-tile">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt=""
+                        class="project-img">
+
+                    <div class="project-title">
+                        <a href="#projects">
+                            <p>Tribute Page</p>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt=""
+                        class="project-img">
+
+                    <div class="project-title">
+                        <a href="#projects">
+                            <p>Random Quote Machine</p>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt=""
+                        class="project-img">
+
+                    <div class="project-title">
+                        <a href="#projects">
+                            <p>JavaScript Calculator</p>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt=""
+                        class="project-img">
+
+                    <div class="project-title">
+                        <a href="#projects">
+                            <p>Map Data Across the Globe</p>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt=""
+                        class="project-img">
+
+                    <div class="project-title">
+                        <a href="#projects">
+                            <p>Wikipedia Viewer</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt=""
+                        class="project-img">
+
+                    <div class="project-title">
+                        <a href="#projects">
+                            <p>Tic Tac Toe Game</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h1>Let's work together...</h1>
+            <i class="fa-brands fa-github-square"><a id="profile-link" href="https://github.com/GuusP"
+                    target="_blank">GitHub</a></i>
+        </section>
+    </main>
+</body>
+
+<script>
+    function navBar() {
+        var el = document.getElementById("navbar");
+        if (el.style.height == "0px") {
+            el.style.height = "max-content";
+        } else {
+            el.style.height = "0px";
+        }
+    }
+
+    window.addEventListener('resize', () => {
+        var newWidth = window.innerWidth;
+        var el = document.getElementById("navbar");
+        if (newWidth >= 768) {
+
+            el.style.height = "max-content";
+            var element = document.getElementById("nav-links");
+            element.style.height = "max-content";
+        }
+    })
+</script>
+
+</html>
