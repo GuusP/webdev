@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    text-decoration: none;
+}
+
+
+:root {
+    --light-blue-bg: #E3EEF8;
+    --blue-bg: #268AFF;
+    --dark-blue-bg: #162B44;
+    --dark-blue-pricing: #2B405A;
+    --gray: #8A8D90;
+    --black: #1B1B1C;
+    --orange: #FC593B;
+    --green: #4EAB09;
+}
+
+
+
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+.nav-link {
+    color: black;
+}
+
+.nav-icon {
+    font-size: 3rem;
+}
+
+header {
+    background-color: var(--light-blue-bg);
+}
+
+.section-heading {
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+
+}
+
+.section-heading:before {
+    content: attr(data-title);
+    display: block;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    font-size: .8rem;
+    margin-block: 1.2rem;
+}
+
+.get-started-btn {
+    padding-block: .5rem;
+    padding-inline: 2rem;
+    margin-top: 1rem;
+    background-color: var(--light-blue-bg);
+    border-color: var(--blue-bg);
+    border-style: solid;
+    color: var(--blue-bg);
+    font-weight: 600;
+}
+
+#features {
+    background-color: var(--light-blue-bg);
+}
+
+.features-get-started-btn {
+    background-color: var(--orange);
+    color: white;
+    font-weight: 600;
+
+}
+
+
+.icon-container img {
+    width: 2rem;
+    height: auto;
+}
+
+.box h1 {
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.box-container {
+    margin-top: 5rem;
+}
+
+#aba-2 {
+    background-color: var(--blue-bg);
+    color: white;
+}
+
+.aba2-get-started-btn {
+    background-color: white;
+    color: var(--blue-bg);
+    font-weight: 600;
+
+}
+
+#aba-3 {
+    background-color: var(--light-blue-bg);
+    color: var(--gray);
+}
+
+#aba-3 h1,
+#aba-4 h1 {
+    color: var(--black);
+}
+
+#aba-3 .section-heading::before {
+    color: var(--blue-bg);
+}
+
+#aba-3 .icon-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#aba-3 .icon-container img {
+    margin: auto 0;
+}
+
+#aba-4 .section-heading::before {
+    color: var(--blue-bg);
+}
+
+#aba-4 {
+    color: var(--gray);
+    background-color: var(--light-blue-bg);
+}
+
+.card-body p {
+    color: var(--black);
+}
+
+.card-body .card-career {
+    color: var(--gray);
+}
+
+#aba-5 h1 {
+    color: white;
+}
+
+#aba-5 {
+    background-color: var(--dark-blue-bg);
+}
+
+.price {
+    font-size: 4rem;
+
+}
+
+#aba-5 h2 {
+    font-size: 1rem;
+}
+
+#aba-5 h3 {
+    font-weight: bolder;
+}
+
+#aba-5 .card {
+    background-color: var(--dark-blue-pricing);
+
+}
+
+.card-basic {
+    color: white !important;
+}
+
+#aba-5 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 40rem;
+}
+
+#aba-5 ul li:before {
+    content: '✓';
+    margin-right: .4rem;
+    font-size: 1.2rem;
+
+}
+
+#aba-5 li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.start-btn {
+    background-color: var(--blue-bg);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.unavailable {
+    text-decoration: line-through;
+    color: var(--gray);
+}
+
+.card-footer p {
+    color: var(--gray);
+}
+
+.card-pro .start-btn {
+    background-color: var(--orange);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.popular {
+    background-color: var(--green);
+}
+
+footer {
+    background-color: var(--light-blue-bg);
+}
+
+.footer-text p {
+    color: var(--gray);
+}
+
+
+footer a:any-link {
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-list-heading {
+    color: var(--gray);
+    font-weight: bold;
+}
+
+
+
+@media(min-width: 992px) {
+    .logos {
+        width: 150px;
+        height: auto;
+    }
+
+
+}

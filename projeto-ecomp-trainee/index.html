@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 5 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/969e070579.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- TO DO: 
+    Tirar a borda das barras ao clicar
+    Alinhar verticalmente o texto do hamburguer menu
+    Deixar o menu dos dropdown mais bonitos
+-->
+    <header>
+        <nav class="navbar p-3">
+            <h1 class="text-center section-heading mx-2 d-lg-none">Shade</h1>
+            <div class="offcanvas offcanvas-start text-center " id="nav-sidebar">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title text-center">Shade</h1>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Landings</a>
+                            <ul class="dropdown-menu border-0">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Pages</a>
+                            <ul class="dropdown-menu  border-0">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="get-started-btn">Get Started</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <button class="btn btn-lg d-lg-none" id="nav-button" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#nav-sidebar"><i class="fa-solid fa-bars nav-bar-icon"></i>
+            </button>
+
+            <ul class="container-fluid d-none justify-content-between list-unstyled align-items-center d-lg-flex">
+                <li>
+                    <h1 class="text-center section-heading">Shade</h1>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Landings</a>
+                        <ul class="dropdown-menu border-0">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Pages</a>
+                        <ul class="dropdown-menu  border-0">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <button class="get-started-btn">Get Started</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section id="features" class="container-fluid pt-5 pb-5">
+            <div class="container-xxl landing-text">
+                <h1 class="section-heading px-md-5 padding" data-title="PRESENT YOUR SERVICE">
+                    Make landing page fast and easily.
+                </h1>
+                <p class="text-center px-md-3">Create custom landing pages with Shades that convert more
+                    visitors than
+                    any
+                    website-no coding
+                    required.
+                </p>
+            </div>
+
+            <form action="" class="row text-center  grid me-sm-1 justify-content-center">
+                <div class="col-sm-8 text-center col-lg-4 col-xl-3">
+                    <input type="email" class="form-control pt-3 pb-3  border-0" id="email"
+                        placeholder="Enter your email" name="email">
+                </div>
+
+                <button type="submit"
+                    class="col-lg-4  col-xl-3 col-sm-4 btn mt-3 mt-sm-0 pt-3 pb-3 px-4 features-get-started-btn">Get
+                    Started</button>
+
+
+            </form>
+
+            <p class="text-center mt-4">Trused by over 50,000+ curstomers</p>
+
+            <div
+                class="box-container d-flex gap-4 justify-content-center flex-sm-row flex-wrap flex-lg-row justify-content-xl-evenly">
+                <div class="box d-flex gap-4">
+                    <div class="icon-container">
+                        <img src="./img/blue-pencil.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Easy to use</h1>
+                        <p class="mb-1">Editing and customizing</p>
+                        <p>Essential Landing is easy and fast.</p>
+                    </div>
+
+                </div>
+
+                <div class="box d-flex gap-4">
+                    <div class="icon-container">
+                        <img src="./img/blue-layers.png" alt="">
+                    </div>
+                    <div>
+                        <h1>300+ Blocks</h1>
+                        <p class="mb-1">Editing and customizing</p>
+                        <p>Essential Landing is easy and fast.</p>
+                    </div>
+
+                </div>
+
+                <div class="box d-flex gap-4">
+                    <div class="icon-container">
+                        <img src="./img/blue-responsive-screen.png" alt="">
+                    </div>
+                    <div>
+                        <h1>100% Responsive</h1>
+                        <p class="mb-1">Editing and customizing</p>
+                        <p>Essential Landing is easy and fast.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="aba-2" class="container-fluid  pb-5">
+            <div class="row  align-items-center ">
+                <div class="img-container mt-5 mb-5 col-12 col-md-6 ">
+                    <img src="./img/phone-image.png" class="img-fluid" alt="smartphone image">
+                </div>
+
+                <div class="text-content col-12 col-md-6">
+                    <h1 class="section-heading text-start px-4" data-title="design is everything">
+                        Present your app features like this way.
+                    </h1>
+                    <p class=" px-4">We designed and tested prototypes that helped identify pain points
+                        in the account creation process. Together, we shaped the new standard.
+                    </p>
+                    <button class="mx-4 btn mt-3 mt-sm-0 pt-3 pb-3 px-5 btn bg-white color aba2-get-started-btn">Get
+                        Started</button>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="aba-3" class="container-fluid py-5">
+            <div class="row  justify-content-between px-3">
+                <div class="text-content col-12 col-md-8 col-lg-6 d-flex flex-column">
+
+                    <h1 class="section-heading text-start px-4" data-title="design is everything">
+                        Present your app features like this way.
+                    </h1>
+                    <p class=" px-4">We designed and tested prototypes that helped identify pain points
+                        in the account creation process. Together, we shaped the new standard.
+                    </p>
+
+
+
+                    <div class="box-container d-flex gap-4 justify-content-start flex-column flex-sm-row px-4">
+                        <div class="box d-flex flex-column gap-4">
+                            <div class="icon-container bg-primary d-flex align-content-center justify-content-center">
+                                <img src="./img/pencil-white.png" alt="">
+                            </div>
+                            <div>
+                                <h1>Easy to use</h1>
+                                <p class="mb-1">Event is not like most teach conferences. We want our
+                                    design to engage
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="box d-flex flex-column gap-4">
+                            <div class="icon-container bg-primary d-flex align-content-center justify-content-center">
+                                <img src="./img/window-paragraph-white.png" alt="">
+                            </div>
+                            <div>
+                                <h1>Beautiful divs</h1>
+                                <p class="mb-1">Event is not like most teach conferences. We want our
+                                    design to engage
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="img-container mt-5 mb-5 text-center col-12 col-md-4">
+                    <img src="./img/content-img-2.png" class="img-fluid" alt="predio image">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="aba-4" class="pb-5 pt-5 container-fluid">
+            <div class=" row  justify-content-lg-between px-4 align-items-center">
+                <div class="text-content col-12 col-md-6 col-lg-4">
+                    <h1 class="section-heading text-start" data-title="customers' story">
+                        50k+ users are showing love.
+                    </h1>
+                    <p>We designed and tested prototypes that helped identify pain points
+                        in the account creation process. Together, we shaped the new standard.
+                    </p>
+                </div>
+
+                <div class="cards row gap-3 col-12 col-md-6 col-lg-8 justify-content-center">
+                    <div class="card border-0 col-12 col-lg-5">
+                        <div class="card-body">
+                            <p class="card-text">"You made it so simple. My new site is so
+                                much faster and easaier to work with than my old
+                                site. I just choose the page make change and click
+                                save."
+                            </p>
+                            <div class="d-flex gap-3">
+                                <div class="mt-1">
+                                    <img src="./img/cameron-designer.png" alt="">
+                                </div>
+
+                                <div>
+                                    <p class="mb-1"><strong>Cameron Anderson</strong> </p>
+                                    <p class="card-career">Designer</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="card border-0 col-12 col-lg-5">
+                        <div class="card-body">
+                            <p class="card-text">"Simply the best. Better than all the rest.
+                                I'd recommend this product to beginners and advanced users."
+                            </p>
+                            <div class="d-flex gap-3">
+                                <div class="mt-1">
+                                    <img src="./img/cameron-designer.png" alt="">
+                                </div>
+
+                                <div>
+                                    <p class="mb-1"><strong>Cameron Anderson</strong> </p>
+                                    <p class="card-career">Designer</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card border-0 col-12 col-lg-5">
+                        <div class="card-body">
+                            <p class="card-text">"You made it so simple. My new site is so
+                                much faster and easaier to work with than my old
+                                site. I just choose the page make change and click
+                                save."
+                            </p>
+                            <div class="d-flex gap-3">
+                                <div class="mt-1">
+                                    <img src="./img/cameron-designer.png" alt="">
+                                </div>
+
+                                <div>
+                                    <p class="mb-1"><strong>Cameron Anderson</strong> </p>
+                                    <p class="card-career">Designer</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card border-0 col-12 col-lg-5">
+                        <div class="card-body">
+                            <p class="card-text">"You made it so simple. My new site is so
+                                much faster and easaier to work with than my old
+                                site. I just choose the page make change and click
+                                save."
+                            </p>
+                            <div class="d-flex gap-3">
+                                <div class="mt-1">
+                                    <img src="./img/cameron-designer.png" alt="">
+                                </div>
+
+                                <div>
+                                    <p class="mb-1"><strong>Cameron Anderson</strong> </p>
+                                    <p class="card-career">Designer</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-fluid d-flex flex-column flex-lg-row mt-5 justify-content-center gap-5"
+                id="apoiadores">
+                <div class="img-container text-center ">
+                    <img src="./img/svg/icon-techcrunch.svg" class="logos" alt="">
+                </div>
+                <div class="img-container text-center">
+                    <img src="./img/svg/icon-thrivephx.svg" class="logos" alt="">
+                </div>
+                <div class="img-container text-center">
+                    <img src="./img/svg/icon-startups.svg" class="logos" alt="">
+                </div>
+                <div class="img-container text-center">
+                    <img src="./img/svg/icon-startupfocus.svg" class="logos" alt="">
+                </div>
+                <div class="img-container text-center">
+                    <img src="./img/svg/icon-hubspot (1).svg" class="logos" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="aba-5" class="container-fluid pt-5 pb-5 ">
+            <h1 class="section-heading" data-title="it's time to taste it">
+                Ready to use our service? Choose a package.
+            </h1>
+
+            <div class="cards row mt-5 justify-content-center gap-4 px-4">
+                <div class="card p-4 card-basic col-12 col-md-5">
+                    <div class="card-header border-0 bg-transparent">
+                        <h2 class="card-title">BASIC</h2>
+                        <h3><span class="price">$ 19</span> /month</h3>
+                        <p>Good for small business launching their
+                            products less than once a year
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="pricing-ul">
+                            <li>
+                                Unlimited Blocks
+                            </li>
+                            <li>
+                                5GB Cloud Storages
+                            </li>
+                            <li class="unavailable">
+                                Custom Domain Names
+                            </li>
+                            <li class="unavailable">
+                                Unlimited Emails
+                            </li>
+                        </ul>
+
+                        <button class="btn start-btn mt-4 mt-sm-0 pt-3 pb-3 px-5">Start Free Trial</button>
+
+                        <div class="card-footer p-0 bg-transparent mt-2 border-0">
+                            <p>
+                                No credit card-content required
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-4 card-pro bg-white  col-12 col-md-5">
+                    <div class="card-header border-0 bg-transparent">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="card-title py-1">PRO</h2>
+                            <div class="rounded-pill popular">
+                                <span
+                                    class="px-3 py-1 text-center d-inline-block align-middle text-white ">POPULAR</span>
+                            </div>
+
+                        </div>
+
+                        <h3><span class="price">$ 29</span> /month</h3>
+                        <p>Good for small business launching their
+                            products less than once a year
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="pricing-ul">
+                            <li>
+                                Unlimited Blocks
+                            </li>
+                            <li>
+                                5GB Cloud Storages
+                            </li>
+                            <li>
+                                Custom Domain Names
+                            </li>
+                            <li>
+                                Unlimited Emails
+                            </li>
+                        </ul>
+
+                        <button class="btn start-btn mt-4 mt-sm-0 pt-3 pb-3 px-5">Start Free Trial</button>
+
+                        <div class="card-footer p-0 bg-transparent mt-2 border-0">
+                            <p>
+                                No credit card-content required
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid  pt-5 px-4 pb-5 px-lg-5">
+            <div class="row  align-items-center justify-content-between">
+                <div class="footer-text col-12 col-lg-4">
+                    <p>Big, small, online, local. Size doesn't matter.
+                        We work on diverse projects for top brands as well
+                        as for cool startups.
+                    </p>
+                    <div class="footer-icons d-flex gap-3">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                </div>
+
+                <div class="footer-list col-12 col-lg-8 row">
+
+                    <ul class="footer-list list-unstyled col-4 align-items-center">
+                        <li class="footer-list-heading mb-4 mt-5">
+                            Help menu
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+
+                    <ul class="footer-list list-unstyled col-4">
+                        <li class=" footer-list-heading mb-4 mt-5">
+                            Support
+                        </li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Privacy and Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+
+                    <ul class="footer-list list-unstyled col-4">
+                        <li class="footer-list-heading mb-4 mt-5">
+                            Products
+                        </li>
+                        <li><a href="#">Shades Pro</a></li>
+                        <li><a href="#">Essentiol Blocks</a></li>
+                        <li><a href="#">Avasta Dash</a></li>
+                        <li><a href="#">vApp Landing Page</a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+
+        </footer>
+    </main>
+
+</body>
+
+</html>
